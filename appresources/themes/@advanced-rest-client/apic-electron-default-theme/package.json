@@ -1,0 +1,31 @@
+{
+  "name": "@advanced-rest-client/apic-electron-default-theme",
+  "description": "Default theme definition for API Console",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "main": "arc-electron-default-theme.css",
+  "keywords": [
+    "apic",
+    "theme"
+  ],
+  "authors": [
+    "Pawel Psztyc",
+    "The Advanced REST client authors <arc@mulesoft.com>"
+  ],
+  "contributors": [
+    "Pawel Psztyc",
+    "The Advanced REST client authors <arc@mulesoft.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/advanced-rest-client/apic-electron-default-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/advanced-rest-client/apic-electron-default-theme/issues",
+    "email": "arc@mulesoft.com"
+  },
+  "private": false,
+  "scripts": {
+    "test": "exit 0"
+  }
+}

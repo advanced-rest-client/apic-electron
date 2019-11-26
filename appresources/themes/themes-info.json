@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "kind": "ARC#ThemeInfo",
+  "themes": [
+    {
+      "title": "Default theme",
+      "name": "@advanced-rest-client/apic-electron-default-theme",
+      "version": "1.0.0",
+      "location": "@advanced-rest-client/apic-electron-default-theme",
+      "mainFile": "@advanced-rest-client/apic-electron-default-theme/apic-electron-default-theme.css",
+      "description": "API Console default theme",
+      "isDefault": true
+    },
+    {
+      "_id": "@advanced-rest-client/apic-electron-anypoint-theme",
+      "title": "Anypoint theme",
+      "name": "@advanced-rest-client/apic-electron-anypoint-theme",
+      "version": "1.0.0",
+      "location": "@advanced-rest-client/apic-electron-anypoint-theme",
+      "mainFile": "@advanced-rest-client/apic-electron-anypoint-theme/apic-electron-anypoint-theme.css",
+      "description": "API Console Anypoint theme",
+      "isDefault": true
+    },
+    {
+      "_id": "@advanced-rest-client/apic-electron-dark-theme",
+      "title": "Dark theme",
+      "name": "@advanced-rest-client/apic-electron-dark-theme",
+      "version": "1.0.0",
+      "location": "@advanced-rest-client/apic-electron-dark-theme",
+      "mainFile": "@advanced-rest-client/apic-electron-dark-theme/apic-electron-dark-theme.css",
+      "description": "API Console dark theme",
+      "isDefault": true
+    }
+  ]
+}
