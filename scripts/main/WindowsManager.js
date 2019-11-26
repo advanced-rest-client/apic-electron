@@ -222,7 +222,7 @@ export class WindowsManager {
    */
   __loadPage(win, appPath) {
     win._startPath = appPath;
-    const dest = path.join(__dirname, '..', '..', 'app.html');
+    const dest = path.join(__dirname, '..', '..', 'index.html');
     const full = url.format({
       pathname: dest,
       protocol: 'file:',
