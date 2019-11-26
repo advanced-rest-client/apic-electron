@@ -32,7 +32,7 @@ export class AppOptions {
       shortcut: '-m',
       type: String
     }, {
-      // Opens ARC in dev mode (opened console, verbose log)
+      // Opens the app in dev mode (opened console, verbose log)
       name: '--debug',
       shortcut: '-d',
       type: Boolean
@@ -42,7 +42,7 @@ export class AppOptions {
       shortcut: '-l',
       type: String
     }, {
-      // Opens ARC in dev mode (opened console, verbose log)
+      // Opens the app in dev mode (opened console, verbose log)
       name: '--with-devtools',
       shortcut: '-w',
       type: Boolean

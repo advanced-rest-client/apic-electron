@@ -102,8 +102,8 @@ class AppPaths {
     this._themesSettings = path.join(this._themesBasePath, themesSettingsFile);
     process.env.APIC_THEMES = this._themesBasePath;
     process.env.APIC_THEMES_SETTINGS = this._themesSettings;
-    log.debug('ARC themes path is set to: ' + process.env.APIC_THEMES);
-    log.debug('ARC themes DB is set to: ' + process.env.APIC_THEMES_SETTINGS);
+    log.debug('Themes path is set to: ' + process.env.APIC_THEMES);
+    log.debug('Themes DB is set to: ' + process.env.APIC_THEMES_SETTINGS);
   }
 }
 

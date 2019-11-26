@@ -1,0 +1,4 @@
+owner: advanced-rest-client
+repo: apic-electron
+provider: github
+updaterCacheDirName: api-console-updater

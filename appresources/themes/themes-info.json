@@ -3,6 +3,7 @@
   "kind": "ARC#ThemeInfo",
   "themes": [
     {
+      "_id": "@advanced-rest-client/apic-electron-default-theme",
       "title": "Default theme",
       "name": "@advanced-rest-client/apic-electron-default-theme",
       "version": "1.0.0",

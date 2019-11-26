@@ -4,7 +4,7 @@ import log from './logger.js';
 import { AppOptions } from './AppOptions.js';
 import { AppDefaults } from './AppDefaults.js';
 import { AppEnvironment } from './AppEnvironment.js';
-import arcPaths from './AppPaths.js';
+import appPaths from './AppPaths.js';
 
 /* eslint-disable require-atomic-updates */
 
@@ -25,7 +25,7 @@ async function electronReadyHandler(initOptions) {
   await global.apic.loadEnvironment();
   global.appLoadingTime = Date.now();
   log.debug('App init time: ' + (global.appLoadingTime - global.appReadyTime));
-  global.arc.open(initOptions.openProtocolFile);
+  global.apic.open(initOptions.openProtocolFile);
 }
 
 /**
@@ -77,15 +77,15 @@ export default async (startTime) => {
   ]);
 
   log.debug('Setting up the environment');
-  arcPaths.setHome();
-  arcPaths.setSettingsFile(initOptions.settingsFile);
-  arcPaths.setThemesPath(initOptions.themesPath);
+  appPaths.setHome();
+  appPaths.setSettingsFile(initOptions.settingsFile);
+  appPaths.setThemesPath(initOptions.themesPath);
 
   // Overrides initial user path to be processed by appPaths
-  initOptions.settingsFile = arcPaths.settingsFile;
-  initOptions.themesPath = arcPaths.themesBasePath;
+  initOptions.settingsFile = appPaths.settingsFile;
+  initOptions.themesPath = appPaths.themesBasePath;
 
-  const currentConfig = await getConfig(arcPaths.settingsFile);
+  const currentConfig = await getConfig(appPaths.settingsFile);
   const colorProfile = currentConfig.colorProfile;
   if (colorProfile && colorProfile !== 'default') {
     app.commandLine.appendSwitch('force-color-profile', colorProfile);
@@ -108,5 +108,9 @@ export default async (startTime) => {
     global.apic.activateHandler();
   });
 
-  app.once('ready', () => electronReadyHandler(initOptions));
+  if (app.isReady()) {
+    electronReadyHandler(initOptions);
+  } else {
+    app.once('ready', () => electronReadyHandler(initOptions));
+  }
 };
