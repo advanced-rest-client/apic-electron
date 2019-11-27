@@ -13,7 +13,7 @@
     "url": "https://github.com/advanced-rest-client/apic-electron"
   },
   "scripts": {
-    "start": "electron . --inspect --debug  --debug-level=\"silly\"",
+    "start": "electron . --inspect --debug  --debug-level=\"silly\" --skip-app-update --skip-themes-update",
     "postinstall": "electron-builder install-app-deps",
     "prepare": "pika-web && node tasks/prepare-app.js",
     "test": "npm run test:main && npm run test:renderer && npm run test:app",

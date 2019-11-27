@@ -55,6 +55,10 @@ export class AppOptions {
       name: '--skip-app-update',
       shortcut: '-u',
       type: Boolean,
+    }, {
+      name: '--skip-themes-update',
+      shortcut: '-s',
+      type: Boolean,
     }];
   }
   /**
