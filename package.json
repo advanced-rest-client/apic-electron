@@ -68,6 +68,7 @@
       "@api-components/api-navigation/api-navigation.js",
       "@api-components/amf-helper-mixin/amf-helper-mixin.js",
       "@polymer/font-roboto-local/roboto.js",
+      "@polymer/font-roboto-local/fonts/roboto/*",
       "marked/lib/marked.js"
     ]
   },
